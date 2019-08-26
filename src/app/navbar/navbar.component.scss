@@ -1,0 +1,63 @@
+.navbar {
+  &__content {
+    max-width: 136.4rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 3.6rem 0;
+  }
+
+  &__section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    &--left {
+      justify-content: flex-start;
+    }
+    
+    &--middle {
+      flex: 2;
+      justify-content: center;
+    }
+    
+    &--right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }
+
+  // &__brand {
+  // }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #8C8C8C;
+    font-weight: 500;
+
+    &:hover {
+      color: #1488FF;
+    }
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    background-color: #1488FF;
+    font: inherit;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+  }
+}
