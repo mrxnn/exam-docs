@@ -1,6 +1,13 @@
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
   &__content {
-    max-width: 136.4rem;
+    max-width: var(--container-width);
+    width: 90%;
     margin: 0 auto;
     display: flex;
     padding: 3.6rem 0;
@@ -43,20 +50,24 @@
 
   &__link {
     text-decoration: none;
-    color: #8C8C8C;
+    color: var(--foreground-color-3);
     font-weight: 500;
 
     &:hover {
-      color: #1488FF;
+      color: var(--primary-color-1);
+    }
+
+    &--active {
+      color: var(--foreground-color-1);
     }
   }
 
   &__button {
     border: none;
     outline: none;
-    background-color: #1488FF;
+    background-color: var(--primary-color-1);
     font: inherit;
-    color: white;
+    color: var(--foreground-color-2);
     padding: 1rem 3rem;
     border-radius: 3px;
   }

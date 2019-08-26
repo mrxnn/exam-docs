@@ -1,3 +1,5 @@
+@import 'theme/resources';
+
 * {
   margin: 0;
   padding: 0;
@@ -18,5 +20,5 @@ body {
   font-size: 1.6rem;
   overflow-x: hidden;
   box-sizing: border-box;
-  background-color: #F4F5F7;
+  background-color: var(--background-color-3);
 }
