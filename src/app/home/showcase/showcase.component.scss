@@ -1,0 +1,29 @@
+.showcase {
+  min-height: 100vh;
+
+  &__filters {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  &__filter {
+    border: none;
+    outline: none;
+    font: inherit;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    color: var(--foreground-color-3);
+    cursor: pointer;
+    margin-right: 1rem;
+
+    &:hover:not(.showcase__filter--active) {
+      color: var(--primary-color-1);
+    }
+
+    &--active {
+      background-color: var(--background-color-2);
+      color: var(--foreground-color-1);
+    }
+  }
+}
