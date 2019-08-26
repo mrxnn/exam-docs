@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="95" height="36" viewBox="0 0 95 36">
-  <g id="Group_8" data-name="Group 8" transform="translate(-278 -46)">
-    <g id="Group_113" data-name="Group 113">
-      <rect id="Rectangle_1" data-name="Rectangle 1" width="21" height="21" transform="translate(278 51)" fill="#1488ff"/>
-      <text id="papers" transform="translate(283 72)" font-size="24" font-family="BowlbyOneSC-Regular, Bowlby One SC" letter-spacing="-0.045em"><tspan x="0" y="0">papers</tspan></text>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="34" viewBox="0 0 89 34">
+  <g id="Group_114" data-name="Group 114" transform="translate(-259 -177)">
+    <text id="PAP" transform="translate(282 204)" font-size="24" font-family="SofiaPro-Black, Sofia Pro" font-weight="800"><tspan x="-22.488" y="0">PAP</tspan></text>
+    <text id="RS" transform="translate(333 204)" font-size="24" font-family="SofiaPro-Black, Sofia Pro" font-weight="800"><tspan x="-14.736" y="0">RS</tspan></text>
+    <line id="Line_1" data-name="Line 1" x2="11" transform="translate(306.5 189)" fill="none" stroke="#3100fc" stroke-width="3"/>
+    <line id="Line_6" data-name="Line 6" x2="11" transform="translate(306.5 196)" fill="none" stroke="#3100fc" stroke-width="3"/>
+    <line id="Line_7" data-name="Line 7" x2="11" transform="translate(306.5 203)" fill="none" stroke="#3100fc" stroke-width="3"/>
   </g>
 </svg>
