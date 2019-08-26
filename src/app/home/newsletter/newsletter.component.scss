@@ -1,5 +1,5 @@
 .newsletter {
-  height: 50vh;
+  height: 55rem;
   background-color: var(--background-color-2);
   display: flex;
   justify-content: center;
@@ -7,6 +7,7 @@
 
   &__content {
     text-align: center;
+    transform: translateY(-2rem); // looks a little better like this
   }
 
   &__image {
