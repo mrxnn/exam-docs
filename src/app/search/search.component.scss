@@ -30,7 +30,6 @@ $border: #353535;
       color: inherit;
       font: inherit;
       margin-right: 6rem;
-      font-weight: 500;
       cursor: pointer;
 
       &:last-child {
@@ -99,5 +98,15 @@ $border: #353535;
     justify-content: flex-end;
     align-items: center;
     height: 10rem;
+    opacity: .5;
+    font-size: 1.4rem;
+
+    p:first-child {
+      margin-right: 1rem;
+    }
+
+    p:last-child {
+      margin-left: 1rem;
+    }
   }
 }
