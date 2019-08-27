@@ -35,14 +35,33 @@
     flex-wrap: wrap;
   }
 
-  &__item {
-    background-color: var(--background-color-2);
-    width: calc(25% - 3rem);
-    margin-right: 1rem;
-    margin-bottom: 4rem;
-    border-radius: 3px;
-    overflow: hidden;
+  &__options {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
+
+  &__button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color-1);
+    font: inherit;
+    color: var(--foreground-color-2);
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    margin: 2rem 0 6rem 0;
+  }
+}
+
+.card {
+  background-color: var(--background-color-2);
+  width: calc(25% - 3rem);
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+  border-radius: 3px;
+  overflow: hidden;
 
   &__image {
     width: 100%;
@@ -69,24 +88,5 @@
   &__price {
     color: var(--primary-color-1);
     font-size: 1.6rem;
-  }
-
-  &__options {
-    width: 90%;
-    max-width: var(--container-width);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__button {
-    border: none;
-    outline: none;
-    background-color: var(--primary-color-1);
-    font: inherit;
-    color: var(--foreground-color-2);
-    padding: 1rem 3rem;
-    border-radius: 3px;
-    margin: 2rem 0 6rem 0;
   }
 }
