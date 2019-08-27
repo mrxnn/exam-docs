@@ -12,6 +12,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { ShowcaseComponent } from './home/showcase/showcase.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ShowcaseComponent,
     NewsletterComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

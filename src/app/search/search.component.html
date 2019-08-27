@@ -1,0 +1,20 @@
+<div class="search">
+  <div class="search__navbar">
+    <img src="assets/svg/logo-light.svg" alt="logo">
+    <button>Read more about our Search Engine</button>
+    <button (click)="onCloseButtonClicked()">CLOSE</button>
+  </div>
+  <div class="search__content">
+    <input type="text" class="search__input" placeholder="Search..." autofocus>
+    <div class="search__filters">
+      <button class="search__filter search__filter--active">All</button>
+      <button class="search__filter">Article</button>
+      <button class="search__filter">Paper</button>
+      <button class="search__filter">Video</button>
+      <button class="search__filter">Presentation</button>
+    </div>
+  </div>
+  <div class="search__footer">
+    <p>Press ESC to close</p>
+  </div>
+</div>

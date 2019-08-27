@@ -1,0 +1,103 @@
+$background: #212123;
+$border: #353535;
+
+.search {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $background;
+  color: var(--foreground-color-2);
+  z-index: 2;
+
+  &__navbar {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 10rem;
+
+    img {
+      margin-right: auto;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: inherit;
+      font: inherit;
+      margin-right: 6rem;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+        border-bottom: 2px solid currentColor;
+      }
+    }
+  }
+
+  &__content {
+    height: calc(100vh - 20rem);
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem;
+    transform: translateY(-3rem);
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    font: inherit;
+    font-size: 14rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: inherit;
+    border-bottom: 2px solid $border;
+    max-width: 85rem;
+
+    &::placeholder {
+      color: inherit;
+      opacity: 1;
+    }
+  }
+
+  &__filters {
+    padding-top: 3rem;
+  }
+
+  &__filter {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+    color: var(--foreground-color-3);
+    margin-right: 3rem;
+    cursor: pointer;
+
+    &--active {
+      color: inherit;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__footer {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10rem;
+  }
+}
