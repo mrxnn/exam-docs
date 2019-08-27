@@ -1,0 +1,141 @@
+.footer {
+  padding: 8rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+  }
+
+  &__row {
+    width: 100%;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e4e4e4;
+    }
+
+    &--1 {
+      display: flex;
+      padding-bottom: 2rem;
+    }
+    
+    &--2 {
+      padding: 4rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &--3 {
+      display: flex;
+      padding-top: 3rem;
+      align-items: center;
+      font-size: 1.4rem;
+      color: var(--foreground-color-3);
+    }
+  }
+
+  &__modules {
+    margin-right: 6rem;
+  }
+
+  &__company {
+    margin-right: auto;
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-family: var(--font-2);
+  }
+
+  &__list {
+    list-style: none;
+    margin-right: 6rem;
+
+    a {
+      text-decoration: none;
+      color: var(--foreground-color-1);
+      opacity: .6;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+
+      &:hover {
+        opacity: 1;
+        color: var(--primary-color-1);
+      }
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background-color: var(--background-color-4);
+    padding: 2rem;
+    font: inherit;
+    width: 40rem;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+
+    h3 {
+      margin-right: 2rem;
+      font-family: var(--font-2)
+    }
+    a {
+      margin-right: 1rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color-1);
+    color: var(--foreground-color-2);
+    font: inherit;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &--secondary {
+      background-color: var(--background-color-1);
+    }
+  }
+
+  &__info-text {
+    font-size: 1.3rem;
+    opacity: .6;
+    max-width: 15rem;
+    margin: 0 6rem 0 2rem;
+    line-height: 1.4;
+  }
+
+  &__statistics {
+    display: flex;
+    text-align: right;
+    div {
+      margin-left: 3rem;
+      p { 
+        opacity: .6; 
+        font-size: 1.3rem; 
+      }
+    }
+  }
+
+  &__payment-info {
+    margin: 0 1rem 0 auto;
+  }
+}
