@@ -6,106 +6,22 @@
     <button class="showcase__filter">On Sale</button>
   </div>
   <div class="showcase__items">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1533219169605-36c958821509?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="item ixid" class="card__image">
+    <div class="card" *ngFor="let post of posts | async">
+      <img [src]="post.imageURL" alt="item ixid" class="card__image">
       <div class="card__content">
         <div>
-          <h3 class="card__title">IELTS Model Questions 2019</h3>
+          <h3 class="card__title">{{ post.title }}</h3>
           <p class="card__details">3hr ago by Quantum in UIKits</p>
         </div>
         <div>
-          <h3 class="card__price">Free</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1523165945512-d8b058e40514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">Advanced Physics Cookbook</h3>
-          <p class="card__details">3hr ago by Quantum in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">$60</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1527465094057-db061fdbfaf7?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">Truth Behind Biology</h3>
-          <p class="card__details">3hr ago by Quantum in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">Read</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1527928026657-38e53124b63f?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">AL English 2019</h3>
-          <p class="card__details">3hr ago by Quantum in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">Free</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1459194504307-19b43e3c6ef4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">Chummi Social IOS UI Kit</h3>
-          <p class="card__details">3hr ago by Marksmann in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">$60</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1523357585206-175e971f2ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">Zoology Extended</h3>
-          <p class="card__details">3hr ago by Animecare in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">Free</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1536630882060-bef9f0825e0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">SLIIT EN3040 Model</h3>
-          <p class="card__details">3hr ago by sliity in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">Free</h3>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1531166473306-c4c0827f3a89?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="item ixid" class="card__image">
-      <div class="card__content">
-        <div>
-          <h3 class="card__title">Exam Preparation Guide</h3>
-          <p class="card__details">3hr ago by PapersHub in UIKits</p>
-        </div>
-        <div>
-          <h3 class="card__price">Read</h3>
+          <h3 class="card__price">{{ post.price ? post.price : 'Free' }}</h3>
         </div>
       </div>
     </div>
   </div>
   <div class="showcase__options">
     <button class="showcase__button">
-      See All Posts
+      See More Posts
     </button>
   </div>
 </section>
