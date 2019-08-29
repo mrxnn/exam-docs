@@ -33,8 +33,15 @@
     }
   }
 
-  // &__brand {
-  // }
+  &__brand {
+    display: flex;
+    align-items: center;
+    
+    img {
+      width: 2.5rem;
+      margin-right: 1rem;
+    }
+  }
 
   &__list {
     list-style: none;

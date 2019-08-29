@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="87" height="29" viewBox="0 0 87 29">
-  <g id="Group_120" data-name="Group 120" transform="translate(-261 -181)">
-    <text id="PAP" transform="translate(282 204)" fill="#fff" font-size="24" font-family="Apercu-Bold, Apercu" font-weight="700"><tspan x="-20.94" y="0">PAP</tspan></text>
-    <text id="RS" transform="translate(333 204)" fill="#fff" font-size="24" font-family="Apercu-Bold, Apercu" font-weight="700"><tspan x="-14.232" y="0">RS</tspan></text>
-    <line id="Line_1" data-name="Line 1" x2="11" transform="translate(306.5 189)" fill="none" stroke="#1488ff" stroke-width="3"/>
-    <line id="Line_6" data-name="Line 6" x2="11" transform="translate(306.5 196)" fill="none" stroke="#1488ff" stroke-width="3"/>
-    <line id="Line_7" data-name="Line 7" x2="11" transform="translate(306.5 203)" fill="none" stroke="#1488ff" stroke-width="3"/>
-  </g>
-</svg>

@@ -3,6 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+
+  // todo
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 *,

@@ -19,8 +19,15 @@ $border: #353535;
     align-items: center;
     height: 10rem;
 
-    img {
+    div {
       margin-right: auto;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2.5rem;
+        margin-right: 1rem;
+      }
     }
 
     button {
