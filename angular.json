@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "papers": {
+    "exam-docs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/papers",
+            "outputPath": "dist/exam-docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "papers:build"
+            "browserTarget": "exam-docs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "papers:build:production"
+              "browserTarget": "exam-docs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "papers:build"
+            "browserTarget": "exam-docs:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "papers:serve"
+            "devServerTarget": "exam-docs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "papers:serve:production"
+              "devServerTarget": "exam-docs:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "papers"
+  "defaultProject": "exam-docs"
 }
