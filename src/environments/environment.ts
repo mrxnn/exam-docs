@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyADfUixDCkxcleAgvQ7Ya23XJLIPZZOjmU",
-    authDomain: "papers-b6d46.firebaseapp.com",
-    databaseURL: "https://papers-b6d46.firebaseio.com",
-    projectId: "papers-b6d46",
+    apiKey: "AIzaSyALBBLEnj4pQ7ZmukzlEU5xg8wYF-fbIMw",
+    authDomain: "exam-docs-b28b6.firebaseapp.com",
+    databaseURL: "https://exam-docs-b28b6.firebaseio.com",
+    projectId: "exam-docs-b28b6",
     storageBucket: "",
-    messagingSenderId: "415022050106",
-    appId: "1:415022050106:web:6d9dbc6b0b5b2050"
+    messagingSenderId: "783208429423",
+    appId: "1:783208429423:web:0975ab976bb3d6a4"
   }
 };
 
