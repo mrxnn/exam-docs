@@ -1,4 +1,5 @@
 <div class="search">
+
   <div class="search__navbar">
     <div>
       <img src="assets/svg/cube.svg" alt="logo">
@@ -7,18 +8,37 @@
     <button>Read more about our Search Engine</button>
     <button (click)="onCloseButtonClicked()">CLOSE</button>
   </div>
+
   <div class="search__content">
-    <input type="text" class="search__input" placeholder="Search..." autofocus>
-    <div class="search__filters">
-      <button class="search__filter search__filter--active">All</button>
-      <button class="search__filter">Article</button>
-      <button class="search__filter">Paper</button>
-      <button class="search__filter">Video</button>
-      <button class="search__filter">Presentation</button>
-    </div>
+    <ais-instantsearch [config]="algoliaConfig">
+      <ais-search-box placeholder="Search..."></ais-search-box>
+      <div class="search__filters">
+        <button class="search__filter search__filter--active">All</button>
+        <button class="search__filter">Article</button>
+        <button class="search__filter">Paper</button>
+        <button class="search__filter">Video</button>
+        <button class="search__filter">Presentation</button>
+      </div>
+      <ais-hits>
+        <ng-template let-hits="hits" let-results="results">
+          <div *ngIf="hits.length === 0 && results.query">
+            No matching results found for <strong>{{ results.query }}</strong>.
+          </div>
+          <div *ngIf="results.query">
+            <div *ngFor="let hit of hits" class="content">
+              <section>
+                <h3>{{ hit.title }} {{ hit.objectID }}</h3>
+              </section>
+            </div>
+          </div>
+        </ng-template>
+      </ais-hits>
+    </ais-instantsearch>
   </div>
+
   <div class="search__footer">
     <p>Press ESC to cancel</p> |
     <p>Search By Algolia</p>
   </div>
+  
 </div>

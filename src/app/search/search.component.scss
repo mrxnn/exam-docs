@@ -1,5 +1,4 @@
 $background: #212123;
-$border: #353535;
 
 .search {
   width: 100vw;
@@ -23,7 +22,6 @@ $border: #353535;
       margin-right: auto;
       display: flex;
       align-items: center;
-
       img {
         width: 2.5rem;
         margin-right: 1rem;
@@ -53,30 +51,12 @@ $border: #353535;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10rem;
-    transform: translateY(-3rem);
-  }
-
-  &__input {
-    border: none;
-    outline: none;
-    font: inherit;
-    font-size: 14rem;
-    font-weight: 500;
-    background-color: transparent;
-    color: inherit;
-    border-bottom: 2px solid $border;
-    max-width: 85rem;
-
-    &::placeholder {
-      color: inherit;
-      opacity: 1;
-    }
+    padding: 13% 10rem;
   }
 
   &__filters {
     padding-top: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__filter {
