@@ -16,10 +16,7 @@ export class DebouncedSearchBoxComponent extends BaseWidget {
 
   @Input() delay: number = 0;
 
-  constructor(
-    @Inject(forwardRef(() => NgAisInstantSearch))
-    public instantSearchParent
-  ) {
+  constructor(@Inject(forwardRef(() => NgAisInstantSearch)) public instantSearchParent) {
     super('DebouncedSearchBox');
   }
 
