@@ -1,0 +1,9 @@
+<div>
+  <input 
+    #input
+    type="text"
+    (keyup)="onChangeDebounced(input.value)"
+    [value]="this.state.query"
+    class="ais-SearchBox-input"
+    placeholder="Search...">
+</div>

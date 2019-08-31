@@ -14,6 +14,7 @@ import { ShowcaseComponent } from './home/showcase/showcase.component';
 import { NewsletterComponent } from './home/newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
+import { DebouncedSearchBoxComponent } from './search/debounced-search-box/debounced-search-box.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SearchComponent } from './search/search.component';
     ShowcaseComponent,
     NewsletterComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+    DebouncedSearchBoxComponent
   ],
   imports: [
     BrowserModule,

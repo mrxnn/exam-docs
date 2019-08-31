@@ -11,7 +11,7 @@
 
   <div class="search__content">
     <ais-instantsearch [config]="algoliaConfig">
-      <ais-search-box placeholder="Search..."></ais-search-box>
+      <app-debounced-search-box [delay]="750"></app-debounced-search-box>
       <div class="search__filters">
         <button class="search__filter search__filter--active">All</button>
         <button class="search__filter">Article</button>
