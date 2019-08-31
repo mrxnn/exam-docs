@@ -11,9 +11,9 @@
 
   <div class="search__content">
     <ais-instantsearch [config]="algoliaConfig">
-      <app-debounced-search-box [delay]="750"></app-debounced-search-box>
+      <app-debounced-search-box [delay]="1000"></app-debounced-search-box>
       <div class="search__filters">
-        <button class="search__filter search__filter--active">All</button>
+        <button class="search__filter active">All</button>
         <button class="search__filter">Article</button>
         <button class="search__filter">Paper</button>
         <button class="search__filter">Video</button>
@@ -26,9 +26,16 @@
           </div>
           <div *ngIf="results.query">
             <div *ngFor="let hit of hits" class="content">
-              <section>
-                <h3>{{ hit.title }} {{ hit.objectID }}</h3>
-              </section>
+              <div class="search__result">
+                <img [src]="hit.imageURL" [alt]="hit.objectID">
+                <div>
+                  <p>3 days ago by Exam Docs</p>
+                  <h3>{{hit.title}} {{hit.objectID}}</h3>
+                  <ais-highlight attribute="title" [hit]="hit"></ais-highlight>
+                  <button *ngIf="hit.price === 0">Explore</button>
+                  <button *ngIf="hit.price !== 0">Buy Now {{hit.price | currency}}</button>
+                </div>
+              </div>
             </div>
           </div>
         </ng-template>
