@@ -3,8 +3,9 @@
   background-color: var(--background-color-2);
   display: flex;
   align-items: center;
-
+  
   &__content {
+    transform: translateY(-10rem);
     max-width: var(--container-width);
     width: 90%;
     height: 100%;
