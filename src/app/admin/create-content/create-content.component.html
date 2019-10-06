@@ -23,6 +23,10 @@
           <textarea id="description" rows="4" class="form__control" placeholder="Short description about the topic..."></textarea>
         </div>
         <div class="form__group">
+          <label class="form__label" style="margin-bottom: 1rem">Content</label>
+          <ckeditor [editor]="Editor"></ckeditor>
+        </div>
+        <div class="form__group">
           <button class="form__submit-btn" type="submit">Submit</button>
         </div>
       </form>

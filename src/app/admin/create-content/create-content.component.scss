@@ -15,12 +15,11 @@
 
   &__card {
     width: 114rem;
-    height: 90vh;
     margin: 0 auto;
     margin-top: 20rem;
     background-color: white;
     border-radius: 4px;
-    padding: 7rem 6rem;
+    padding: 8rem;
     position: relative;
     box-shadow: 0 2px 2px rgba(black, .1);
   }
@@ -41,7 +40,10 @@
   }
 
   &__label {
-    opacity: .8;
+    opacity: .6;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .4px;
   }
 
   &__control {
@@ -69,4 +71,10 @@
     border-radius: 3px;
     cursor: pointer;
   }
+}
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 20rem;
+  ul { margin: 10px; padding: 10px; }
+  ol { margin: 10px; padding: 10px; }
 }

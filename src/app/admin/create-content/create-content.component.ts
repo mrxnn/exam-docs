@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-create-content',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-content.component.scss']
 })
 export class CreateContentComponent implements OnInit {
+  public Editor = ClassicEditor;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }
