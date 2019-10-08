@@ -19,7 +19,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.loading = true;
     this.subscription = this.auth.user$.subscribe(user => {
       this.loading = false;
-      if (this.auth.isAdmin(user)) this.admin = true;
+      if (this.auth.isAdmin(user)) 
+        this.admin = true;
+      else this.admin = false;
     });
   }
 
