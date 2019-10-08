@@ -14,7 +14,7 @@
 <ng-template #signin>
   <h1 class="login__title">Sign in to your account</h1>
   <div class="login__flex">
-    <button class="login__signin-btn">
+    <button class="login__signin-btn" (click)="auth.googleSignin()">
       <img src="assets/svg/login-google.svg" alt="google" class="login__signin-btn-icon">
       Sign In with Google
     </button>
