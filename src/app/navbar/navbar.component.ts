@@ -10,13 +10,17 @@ import { Subscription } from 'rxjs';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   loading: boolean;
+  admin: boolean;
   subscription: Subscription;
 
   constructor(private router: Router, public auth: AuthService) { }
 
   ngOnInit() {
     this.loading = true;
-    this.subscription = this.auth.user$.subscribe(user => this.loading = false);
+    this.subscription = this.auth.user$.subscribe(user => {
+      this.loading = false;
+      if (this.auth.isAdmin(user)) this.admin = true;
+    });
   }
 
   ngOnDestroy() {

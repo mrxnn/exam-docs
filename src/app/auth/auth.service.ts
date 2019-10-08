@@ -49,4 +49,8 @@ export class AuthService {
     }
     return false;
   }
+
+  isAdmin(user: User) {
+    return this.checkAuthorization(user, ['admin']);
+  }
 }
