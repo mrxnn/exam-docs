@@ -36,9 +36,7 @@ export class AuthService {
     const data: User = {
       uid: user.uid,
       email: user.email,
-      roles: {
-        subscriber: true
-      }
+      roles: ['subscriber']
     }
     return userRef.set(data, {merge:true});
   }
@@ -46,7 +44,7 @@ export class AuthService {
   private checkAuthorization(user: User, allowedRoles: string[]) : boolean {
     if (!user) return false;
     for (const role of allowedRoles) {
-      if (user.roles[role]) 
+      if (user.roles.includes(role)) 
         return true;
     }
     return false;
