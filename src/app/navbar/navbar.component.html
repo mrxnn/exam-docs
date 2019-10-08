@@ -26,7 +26,11 @@
       </ul>
     </div>
     <div class="navbar__section navbar__section--right">
-      <button class="button navbar__button" (click)="onSignInClicked()">Sign In</button>
+      <button class="button navbar__button" (click)="onSignInClicked()" *ngIf="!(auth.user$ | async)" [disabled]="loading">
+        <img src="assets/svg/spinner.svg" alt="spin" *ngIf="loading">
+        <p *ngIf="!loading">Sign In</p>
+      </button>
+      <button class="button navbar__button" (click)="onSignedInClicked()" *ngIf="auth.user$ | async">Signed In</button>
     </div>
   </div>
 </nav>

@@ -15,6 +15,7 @@ import { NewsletterComponent } from './home/newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { DebouncedSearchBoxComponent } from './search/debounced-search-box/debounced-search-box.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DebouncedSearchBoxComponent } from './search/debounced-search-box/debou
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    NgAisModule.forRoot()
+    NgAisModule.forRoot(),
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

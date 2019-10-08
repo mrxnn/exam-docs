@@ -75,5 +75,23 @@
     color: var(--foreground-color-2);
     padding: 1rem 3rem;
     border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10rem;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    img {
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
