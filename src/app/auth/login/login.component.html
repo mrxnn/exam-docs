@@ -1,0 +1,51 @@
+<div class="login">
+  <div class="login__card">
+    <div class="login__tabs">
+      <button class="login__tab-btn" [class.login__tab-btn--active]="selectedTab==='signin'" (click)="selectedTab='signin'">Sign In</button>
+      <button class="login__tab-btn" [class.login__tab-btn--active]="selectedTab==='signup'" (click)="selectedTab='signup'">Sign Up</button>
+    </div>
+    <div *ngIf="selectedTab==='signin'; then signin else signup">
+      <!--template will be replaced-->
+    </div>
+  </div>
+</div>
+
+<!--sign in template-->
+<ng-template #signin>
+  <h1 class="login__title">Sign in to your account</h1>
+  <div class="login__flex">
+    <button class="login__signin-btn">
+      <img src="assets/svg/login-google.svg" alt="google" class="login__signin-btn-icon">
+      Sign In with Google
+    </button>
+    <button class="login__signin-btn">
+      <img src="assets/svg/login-facebook.svg" alt="fb" class="login__signin-btn-icon">
+      Sign In with Facebook
+    </button>
+  </div>
+  <div class="login__devider">
+    <div>&nbsp;</div>
+    <h5>OR</h5>
+    <div>&nbsp;</div>
+  </div>
+  <input type="text" class="login__input" placeholder="Email Address">
+  <input type="password" class="login__input" placeholder="Password">
+  <p class="login__agreement">
+    By clicking Sign In, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
+  </p>
+  <button class="login__submit-btn">Sign In</button>
+  <a href="#" class="login__reset-password-link">If you're not a member, register for free</a>
+</ng-template>
+
+<!--sign up template-->
+<ng-template #signup>
+  <h1 class="login__title">Sign up to your account</h1>
+  <input type="text" class="login__input" placeholder="Email Address">
+  <input type="password" class="login__input" placeholder="Password">
+  <input type="password" class="login__input" placeholder="Retype the password">
+  <p class="login__agreement">
+    By clicking Sign Up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
+  </p>
+  <button class="login__submit-btn">Sign Up</button>
+  <a href="#" class="login__reset-password-link">If you're already a member, sign in</a>
+</ng-template>

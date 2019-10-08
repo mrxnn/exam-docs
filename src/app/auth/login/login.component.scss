@@ -1,0 +1,149 @@
+a {
+  text-decoration: none;
+  color: var(--primary-color-1);
+  font-weight: 500;
+  transition: color .2s;
+  &:hover {
+    color: var(--primary-color-2);
+  }
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-3);
+  z-index: 1;
+  
+  &__card {
+    width: 58rem;
+    background-color: white;
+    text-align: center;
+    padding: 10rem 4rem 5rem 4rem;
+    border: 1px solid #dbe2e8;
+    box-shadow: 2px 2px 3px 0 rgba(117,124,129,.12);
+    position: relative;
+  }
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  &__tab-btn {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font: inherit;
+    background-color: #FAFBFC;
+    color: var(--foreground-color-3);
+    border-bottom: 1px solid #eef1f3;
+    cursor: pointer;
+
+    &:first-child { border-right: 1px solid #eef1f3; }
+    &:last-child { border-left: 1px solid #eef1f3; }
+
+    &--active {
+      background-color: white;
+      border: 1px solid transparent;
+      color: black;
+      font-weight: 500;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__signin-btn {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    border-radius: 3px;
+    font: inherit;
+    font-weight: 500;
+    color: var(--foreground-color-4);
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__signin-btn-icon {
+    height: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  &__devider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+    h5 { margin: 0 1.5rem; opacity: .6; }
+    div {
+      flex: 1;
+      height: 1px;
+      background-color: #e5eaee;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font: inherit;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #dbe2e8;
+    box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+    border-radius: 3px;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__agreement {
+    color: var(--foreground-color-4);
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+
+  &__submit-btn {
+    width: 100%;
+    border: none;
+    outline: 0;
+    background-color: var(--primary-color-1);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 12px 15px 20px rgba(0,0,0,.1);
+    font: inherit;
+    padding: 1.3rem;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    transition: background-color .2s;
+    cursor: pointer;
+  }
+}
