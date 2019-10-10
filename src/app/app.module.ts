@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { DebouncedSearchBoxComponent } from './search/debounced-search-box/debounced-search-box.component';
 import { AuthModule } from './auth/auth.module';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthModule } from './auth/auth.module';
     NewsletterComponent,
     FooterComponent,
     SearchComponent,
-    DebouncedSearchBoxComponent
+    DebouncedSearchBoxComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

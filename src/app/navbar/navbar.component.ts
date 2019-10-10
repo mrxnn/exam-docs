@@ -35,6 +35,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   onSignedInClicked() {
     // todo
-    this.router.navigate(['profile']);
+    if (this.admin)
+      this.router.navigate(['admin']);
+    else 
+      this.router.navigate(['profile']);
   }
 }

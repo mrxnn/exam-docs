@@ -1,0 +1,11 @@
+.page {
+  background-color: white;
+  height: calc(100vh - 10rem);
+  width: 100vw;
+
+  &__content {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+  }
+}
