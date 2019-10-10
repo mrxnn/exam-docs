@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { PostsService } from 'src/app/_services/posts/posts.service';
 
 @Component({
   selector: 'app-showcase',
@@ -11,13 +12,14 @@ import { Router } from '@angular/router';
 export class ShowcaseComponent implements OnInit {
   posts: Observable<any[]>;
 
-  constructor(private afs: AngularFirestore, private router: Router) { }
+  constructor(private afs: AngularFirestore, private router: Router, private ps: PostsService) { }
 
   ngOnInit() {
     this.posts = this.afs.collection('posts').valueChanges({ idField: 'id' });
   }
 
-  onPostClicked(postId: string) {
-    this.router.navigate(['post', postId]);
+  onPostClicked(post: any) {
+    this.ps.selectedPost$.next(post);
+    this.router.navigate(['post', post.id]);
   }
 }
