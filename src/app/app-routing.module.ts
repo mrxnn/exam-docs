@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'posts/:postid', component: PostComponent },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
-  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }
 ];
 
 @NgModule({
