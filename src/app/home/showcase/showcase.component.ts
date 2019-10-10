@@ -20,6 +20,6 @@ export class ShowcaseComponent implements OnInit {
 
   onPostClicked(post: any) {
     this.ps.selectedPost$.next(post);
-    this.router.navigate(['post', post.id]);
+    this.router.navigate(['posts', post.id]);
   }
 }
