@@ -17,7 +17,7 @@ import { SearchComponent } from './search/search.component';
 import { DebouncedSearchBoxComponent } from './search/debounced-search-box/debounced-search-box.component';
 import { AuthModule } from './auth/auth.module';
 import { ProfileComponent } from './profile/profile.component';
-import { ArticleComponent } from './article/article.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { ArticleComponent } from './article/article.component';
     SearchComponent,
     DebouncedSearchBoxComponent,
     ProfileComponent,
-    ArticleComponent
+    PostComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,6 @@ export class ShowcaseComponent implements OnInit {
   }
 
   onPostClicked(postId: string) {
-    this.router.navigate(['article', postId]);
+    this.router.navigate(['post', postId]);
   }
 }
