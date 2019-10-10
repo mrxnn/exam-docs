@@ -1,5 +1,23 @@
-<div class="page">
-  <div class="page__content">
-    <h2>User Profile</h2>
-  </div>  
+<div class="profile">
+  <div class="profile__navbar">
+    <div class="profile__navbar-content">
+      <div>
+        <img src="assets/svg/cube.svg" alt="logo">
+        <h3>Exam Docs</h3>
+      </div>
+      <p>{{(auth.user$ | async)?.email}}</p>
+      <button (click)="onCloseButtonClicked()">CLOSE</button>
+    </div>
+  </div>
+
+  <div class="profile__content">
+    <div class="profile__left">
+      <img src="assets/img/profile-img.jpg" alt="profile" class="profile__img">
+    </div>
+    <div class="profile__right">
+      <p>You're currently logged in as</p>
+      <h3>{{(auth.user$ | async)?.email}}</h3>
+      <button class="profile__logout-btn" (click)="auth.signOut('/')">Logout</button>
+    </div>
+  </div>
 </div>

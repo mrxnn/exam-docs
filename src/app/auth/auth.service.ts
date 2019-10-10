@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { User } from './user.model';
 import * as firebase from 'firebase/app';
@@ -23,6 +23,13 @@ export class AuthService {
         }
       })
     );
+  }
+
+  async signOut(@Optional() redirectURL: string) {
+    await this.afAuth.auth.signOut();
+    if (redirectURL) {
+      this.router.navigate([redirectURL]);
+    }
   }
 
   async googleSignin() {
