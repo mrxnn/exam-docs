@@ -62,6 +62,11 @@
   margin-bottom: 4rem;
   border-radius: 3px;
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(black, 0.05);
+  }
 
   &__image {
     width: 100%;
