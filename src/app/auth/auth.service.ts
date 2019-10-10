@@ -32,10 +32,15 @@ export class AuthService {
     }
   }
 
-  async googleSignin() {
+  async googleSignin(@Optional() redirectURL: string) {
     const provider = new firebase.auth.GoogleAuthProvider();
     const credentials = await this.afAuth.auth.signInWithPopup(provider);
-    this.updateUserData(credentials.user);
+    if (redirectURL) {
+      await this.updateUserData(credentials.user);
+      this.router.navigate([redirectURL]);
+    } else {
+      this.updateUserData(credentials.user);
+    }
   }
 
   updateUserData(user: firebase.User) {
@@ -43,7 +48,9 @@ export class AuthService {
     const data: User = {
       uid: user.uid,
       email: user.email,
-      roles: ['subscriber']
+      roles: {
+        subscriber: true
+      }
     }
     return userRef.set(data, {merge:true});
   }
@@ -51,7 +58,7 @@ export class AuthService {
   private checkAuthorization(user: User, allowedRoles: string[]) : boolean {
     if (!user) return false;
     for (const role of allowedRoles) {
-      if (user.roles.includes(role)) 
+      if (user.roles[role])
         return true;
     }
     return false;

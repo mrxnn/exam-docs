@@ -1,3 +1,10 @@
+.u-text-dimmed {
+  opacity: .6;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
 .profile {
   width: 100vw;
   height: 100vh;
@@ -64,6 +71,11 @@
   &__img {
     width: 100%;
     transform: translateY(-3rem);
+  }
+
+  &__field {
+    margin-bottom: 2rem;
+    div {margin-bottom: 1rem;}
   }
 
   &__logout-btn {
