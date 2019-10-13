@@ -6,7 +6,7 @@
     <button class="showcase__filter">On Sale</button>
   </div>
   <div class="showcase__items">
-    <div class="card" *ngFor="let post of posts | async" (click)="onPostClicked(post)">
+    <div class="card" *ngFor="let post of posts$ | async" (click)="onPostClicked(post)">
       <img [src]="post.imageURL" alt="item ixid" class="card__image">
       <div class="card__content">
         <div>

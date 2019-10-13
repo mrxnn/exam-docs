@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { PostsService } from 'src/app/_services/posts/posts.service';
@@ -10,12 +9,12 @@ import { PostsService } from 'src/app/_services/posts/posts.service';
   styleUrls: ['./showcase.component.scss']
 })
 export class ShowcaseComponent implements OnInit {
-  posts: Observable<any[]>;
+  posts$: Observable<any[]>;
 
-  constructor(private afs: AngularFirestore, private router: Router, private ps: PostsService) { }
+  constructor(private router: Router, private ps: PostsService) { }
 
   ngOnInit() {
-    this.posts = this.afs.collection('posts').valueChanges({ idField: 'id' });
+    this.posts$ = this.ps.loadAllPosts();
   }
 
   onPostClicked(post: any) {
