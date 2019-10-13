@@ -85,12 +85,12 @@
     }
 
     img {
-      animation: spin 1s linear infinite;
+      animation: user-loading 1s linear infinite;
     }
   }
 }
 
-@keyframes spin {
+@keyframes user-loading {
   to {
     transform: rotate(360deg);
   }
