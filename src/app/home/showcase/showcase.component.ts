@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
-import { PostsService } from 'src/app/_services/posts/posts.service';
+import { PostsService } from 'src/app/shared/posts/posts.service';
 
 @Component({
   selector: 'app-showcase',

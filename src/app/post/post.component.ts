@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { PostsService } from '../_services/posts/posts.service';
 import { ActivatedRoute } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { tap, first } from 'rxjs/operators';
 import { Location } from '@angular/common';
 import { Subscription } from 'rxjs';
+import { PostsService } from '../shared/posts/posts.service';
 
 @Component({
   selector: 'app-post',
