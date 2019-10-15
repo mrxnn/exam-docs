@@ -11,7 +11,7 @@ import { PostsService } from 'src/app/shared/posts/posts.service';
 export class ShowcaseComponent implements OnInit {
   posts$: Observable<any[]>;
 
-  constructor(private router: Router, private ps: PostsService) { }
+  constructor(private router: Router, public ps: PostsService) { }
 
   ngOnInit() {
     this.posts$ = this.ps.loadAllPosts();
