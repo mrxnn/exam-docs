@@ -23,6 +23,12 @@
       letter-spacing: -1px;
       margin-top: -4rem;
       line-height: 1.38;
+      @media only screen and (max-width: 1400px) {
+        font-size: 4rem;
+        margin-top: 0;
+        width: 50rem;
+        margin-bottom: 1rem;
+      }
     }
 
     p {
@@ -30,6 +36,11 @@
       margin-top: 1rem;
       line-height: 34px;
       letter-spacing: .3px;
+      @media only screen and (max-width: 1400px) {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        width: 55rem;
+      }
     }
     
     button {
@@ -54,6 +65,11 @@
       height: 65vh;
       object-fit: cover;
       border-radius: 3px;
+
+      @media only screen and (max-width: 1400px) {
+        height: 70vh;
+        transform: translateY(4vh);
+      }
     }
   }
 

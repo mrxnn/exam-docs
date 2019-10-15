@@ -15,5 +15,9 @@
 
   --container-width: 136.4rem;
 
+  @media only screen and (max-width: 1400px) {
+    --container-width: 114rem;
+  }
+
   --font-1: 'Apercu', sans-serif;
 }
