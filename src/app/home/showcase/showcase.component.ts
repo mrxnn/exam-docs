@@ -14,11 +14,14 @@ export class ShowcaseComponent implements OnInit {
   constructor(private router: Router, public ps: PostsService) { }
 
   ngOnInit() {
-    this.posts$ = this.ps.loadAllPosts();
   }
 
   onPostClicked(post: any) {
     this.ps.selectedPost$.next(post);
     this.router.navigate(['posts', post.id]);
+  }
+
+  load() {
+    this.posts$ = this.ps.loadAllPosts();
   }
 }

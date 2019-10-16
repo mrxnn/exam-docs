@@ -5,7 +5,7 @@
     <button class="showcase__filter">Articles</button>
     <button class="showcase__filter">On Sale</button>
   </div>
-  <div class="showcase__items">
+  <div class="showcase__items" (lazyload)="load()">
     <div class="card" *ngFor="let post of posts$ | async" (click)="onPostClicked(post)">
       <img [src]="post.imageURL" alt="item ixid" class="card__image">
       <div class="card__content">
@@ -24,5 +24,4 @@
       See More Posts
     </button>
   </div>
-  <img src="assets/svg/spinner-blue.svg" alt="spin" class="showcase__loading-indicator" *ngIf="ps.loading">
 </section>

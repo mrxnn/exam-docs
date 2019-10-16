@@ -19,6 +19,7 @@ import { AuthModule } from './auth/auth.module';
 import { ProfileComponent } from './profile/profile.component';
 import { PostComponent } from './post/post.component';
 import { LoadingComponent } from './loading/loading.component';
+import { LazyLoadDirective } from './shared/lazy-load/lazy-load.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoadingComponent } from './loading/loading.component';
     DebouncedSearchBoxComponent,
     ProfileComponent,
     PostComponent,
-    LoadingComponent
+    LoadingComponent,
+    LazyLoadDirective
   ],
   imports: [
     BrowserModule,

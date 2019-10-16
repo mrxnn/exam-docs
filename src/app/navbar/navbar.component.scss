@@ -88,12 +88,12 @@
     }
 
     img {
-      animation: user-loading 1s linear infinite;
+      animation: loading 1s linear infinite;
     }
   }
 }
 
-@keyframes user-loading {
+@keyframes loading {
   to {
     transform: rotate(360deg);
   }
