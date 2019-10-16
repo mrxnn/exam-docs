@@ -11,6 +11,10 @@ export class PostsService {
 
   constructor(private afs: AngularFirestore) { }
 
+  loadPost(id: string) {
+    return this.afs.collection('posts').doc(id).valueChanges().pipe(shareReplay());
+  }
+
   loadAllPosts() {
     return this.afs.collection('posts').valueChanges({ idField: 'id' }).pipe(shareReplay());
   }

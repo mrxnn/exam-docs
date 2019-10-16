@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AngularFirestore } from '@angular/fire/firestore';
 import { tap, first } from 'rxjs/operators';
 import { Location } from '@angular/common';
 import { Subscription } from 'rxjs';
@@ -16,7 +15,7 @@ export class PostComponent implements OnInit, OnDestroy {
   loading: boolean = true;
   subscription: Subscription;
 
-  constructor(private ps: PostsService, private route: ActivatedRoute, private afs: AngularFirestore, private location: Location) { }
+  constructor(private ps: PostsService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {    
     this.subscription = this.ps.selectedPost$.subscribe(post => {
@@ -27,10 +26,10 @@ export class PostComponent implements OnInit, OnDestroy {
     // when there is no selected post, eg: first time loading using a deep link
     if (this.ps.selectedPost$.getValue() === null) {
       const postId = this.route.snapshot.paramMap.get('postid');
-      this.afs.collection('posts').doc(postId).valueChanges().pipe(
+      this.ps.loadPost(postId).pipe(
         first(),
-        tap(post => this.ps.selectedPost$.next(post))
-      ).subscribe();
+        tap(post => this.ps.selectedPost$.next(post)))
+        .subscribe();
     }
   }
 
