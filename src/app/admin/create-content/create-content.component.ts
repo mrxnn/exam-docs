@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-create-content',
@@ -7,9 +7,19 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
   styleUrls: ['./create-content.component.scss']
 })
 export class CreateContentComponent implements OnInit {
-  public Editor = ClassicEditor;
+  tinymceInit;
+  apiKey = environment.tinyMCE.apiKey;
 
-  constructor() { }
+  constructor() {
+    this.tinymceInit = {
+      plugins : [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen emoticons paste",
+        "insertdatetime media nonbreaking save table directionality template textpattern"
+      ],
+      toolbar : 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | removeformat'
+    }
+  }
 
   ngOnInit() {
   }

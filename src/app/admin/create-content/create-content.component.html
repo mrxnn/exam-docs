@@ -25,7 +25,7 @@
         </div>
         <div class="form__group">
           <label class="form__label" style="margin-bottom: 1rem">Content</label>
-          <ckeditor [editor]="Editor"></ckeditor>
+          <editor [apiKey]="apiKey" [init]="tinymceInit"></editor>
         </div>
         <div class="form__group">
           <button class="form__submit-btn" type="submit">Submit</button>

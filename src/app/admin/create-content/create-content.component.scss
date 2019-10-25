@@ -82,9 +82,3 @@
     cursor: pointer;
   }
 }
-
-:host ::ng-deep .ck-editor__editable_inline {
-  min-height: 20rem;
-  ul { margin: 10px; padding: 10px; }
-  ol { margin: 10px; padding: 10px; }
-}

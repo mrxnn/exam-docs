@@ -12,5 +12,8 @@ export const environment = {
   algolia: {
     apiKey: 'c45b428f5d5fea0d43642a540c85d3f2',
     appId: '28IX9IUVZI'
+  },
+  tinyMCE: {
+    apiKey: 'ywe3hs0mtphibiihsa9xrtp8kdm0off9i7t3e4ovpfi33ltk'
   }
 };
