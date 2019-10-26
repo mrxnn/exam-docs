@@ -85,12 +85,14 @@
   }
 
   &__title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: .5rem;
+    font-weight: 400;
   }
 
   &__details {
     font-size: 1.5rem;
+    font-weight: 400;
     color: var(--foreground-color-3);
   }
 

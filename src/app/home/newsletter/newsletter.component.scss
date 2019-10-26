@@ -16,7 +16,7 @@
 
   &__title {
     margin-top: 3rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   &__input {
@@ -31,5 +31,6 @@
 
   &__secondary-text {
     color: var(--foreground-color-3);
+    font-weight: 300;
   }
 }
