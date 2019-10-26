@@ -61,18 +61,19 @@ $border-color: #e8e9eb;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 40%;
-    max-width: 50rem;
+    width: 50%;
 
     ul {
       display: flex;
       width: 100%;
+
       li {
         flex: 1;
         margin-bottom: 4rem;
         font-size: 1.5rem;
         letter-spacing: .5px;
         cursor: pointer;
+        text-align: right;
       }
     }
   }
@@ -80,6 +81,7 @@ $border-color: #e8e9eb;
   &__social {
     border-top: 1px solid $border-color;
     padding: 6rem 0;
+
     div {
       width: 90%;
       max-width: var(--container-width);
