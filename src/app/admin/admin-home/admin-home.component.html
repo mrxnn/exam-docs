@@ -1,5 +1,66 @@
-<div class="page">
-  <div class="page__content">
-    <h1>Welcome Back!</h1>
-  </div>  
+<div class="admin">
+  <div class="admin__navbar">
+    <div class="admin__navbar-content">
+      <div>
+        <img src="assets/svg/cube-light.svg" alt="logo">
+        <h3>Exam Docs</h3>
+      </div>
+      <button (click)="onLogoutButtonClicked()">Logout from Admin</button>
+      <button (click)="onCloseButtonClicked()">CLOSE</button>
+    </div>
+  </div>
+
+  <div class="admin__header">
+    <div class="admin__header-content">
+      <h2>Thank you for your interest in publishing new content</h2>
+      <p>
+        The first step is to pitch us your content idea for our team of editors to look at and provide feedback. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quam quidem laudantium modi eum
+        The first step is to pitch us your content idea for our team of editors to look at and provide feedback. 
+        The first step is to pitch us your content idea for our team of editors to look at and provide feedback. 
+        The first step is to pitch us your content idea for our team of editors to look at and provide feedback. 
+      </p>
+      <h3>You can review some of the tips and guidelines below before publishing new content.</h3>
+      <ul>
+        <li>Pitch us an original idea. If it is a topic we have already covered, tell us why it needs to be revisited.</li>
+        <li>For photo essays, send us a brief pitch that is similar to the one for articles. The same applies for videos.</li>
+        <li>Wherever possible, do send us some clips of your previous work so we have an understanding of your writing style.</li>
+        <li>We will review your content pitch and if we like it we will get in touch with you via the email provided with next steps.</li>
+        <li>If we commission your content pitch our usual pay $50 for articles and $100 for visual content.</li>
+        <li>If you have any questions or queries you can email us on contact@examdocs.com.</li>
+      </ul>
+    </div>
+    <img src="assets/svg/admin.svg" alt="admin" class="admin__img">
+  </div>
+
+  <div class="admin__publish">
+    <h2 style="margin-bottom: 5rem;">Publish new content pitch...</h2>
+    <form class="form">
+      <div class="form__flex">
+        <div class="form__group">
+          <label class="form__label" for="author-name">Author's Name</label>
+          <input type="text" class="form__control" id="author-name">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="author-email">Email Address</label>
+          <input type="email" class="form__control" id="author-email">
+        </div>
+      </div>
+      <div class="form__group">
+        <label for="title" class="form__label">Title*</label>
+        <input type="text" class="form__control" id="title" placeholder="Please specity...">
+      </div>
+      <div class="form__group">
+        <label for="description" class="form__label">Summary</label>
+        <textarea id="description" rows="4" class="form__control" placeholder="Short description about the topic..."></textarea>
+      </div>
+      <div class="form__group">
+        <label class="form__label" style="margin-bottom: 1rem">Content</label>
+        <editor [apiKey]="apiKey" [init]="tinymceInit"></editor>
+      </div>
+      <div class="form__group">
+        <button class="form__submit-btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>
