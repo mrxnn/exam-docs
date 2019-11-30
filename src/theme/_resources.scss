@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'TT Commons';
+  src: url('assets/font/TTCommons-Regular.woff2') format('woff2'), 
+       url('assets/font/TTCommons-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Commons';
+  src: url('assets/font/TTCommons-Medium.woff2') format('woff2'), 
+       url('assets/font/TTCommons-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 *:root {
-  --background-color-1: black;
+  --background-color-1: rgb(14, 2, 2);
   --background-color-2: white;
   --background-color-3: #F4F5F7;
   --background-color-4: #E1E2E5;
@@ -20,5 +35,5 @@
     --container-width: 114rem;
   }
 
-  --font-1: 'Product Sans', sans-serif;
+  --font-1: 'TT Commons', sans-serif;
 }
