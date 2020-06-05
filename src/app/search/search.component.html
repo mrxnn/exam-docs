@@ -12,12 +12,8 @@
   <div class="search__content">
     <ais-instantsearch [config]="algoliaConfig">
       <app-debounced-search-box [delay]="1000"></app-debounced-search-box>
-      <div class="search__filters">
-        <button class="search__filter active">All</button>
-        <button class="search__filter">Article</button>
-        <button class="search__filter">Paper</button>
-        <button class="search__filter">Video</button>
-        <button class="search__filter">Presentation</button>
+      <div class="search__hint">
+        <p>Press <span>ENTER</span> to search</p>
       </div>
       <ais-hits>
         <ng-template let-hits="hits" let-results="results">

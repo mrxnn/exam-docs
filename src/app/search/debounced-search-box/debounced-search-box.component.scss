@@ -6,11 +6,20 @@ input {
   font-weight: 500;
   background-color: transparent;
   color: inherit;
-  border-bottom: 2px solid #353535;
   max-width: 85rem;
   
   &::placeholder {
-    color: inherit;
+    color: #464646;
     opacity: 1;
   }
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(to right, #353535,var(--background-color-5));
+}
+
+input:focus + .line {
+  //line when focused
 }

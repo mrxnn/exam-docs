@@ -56,26 +56,12 @@
     padding: 13% 10rem 0 10rem;
   }
 
-  &__filters {
+  &__hint {
     padding-top: 3rem;
     margin-bottom: 5rem;
-
-    button {
-      border: none;
-      outline: none;
-      background-color: transparent;
-      font: inherit;
-      color: var(--foreground-color-3);
-      margin-right: 3rem;
-      cursor: pointer;
-
-      &.active {
-        color: inherit;
-      }
-
-      &:hover {
-        color: inherit;
-      }
+    color: var(--foreground-color-3);
+    span {
+      color: var(--foreground-color-2);
     }
   }
 
