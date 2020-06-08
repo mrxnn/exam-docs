@@ -1,109 +1,127 @@
-// product sans
-// @import 'https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i';
-
-// tt commons
-// @font-face {
-//   font-family: 'TT Commons';
-//   src: url('assets/tt-commons/TTCommons-Regular.woff2') format('woff2'), 
-//        url('assets/tt-commons/TTCommons-Regular.woff') format('woff');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'TT Commons';
-//   src: url('assets/tt-commons/TTCommons-Medium.woff2') format('woff2'), 
-//        url('assets/tt-commons/TTCommons-Medium.woff') format('woff');
-//   font-weight: 500;
-//   font-style: normal;
-// }
-
-// gilroy
+// larsseit
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Light.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Italic.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Bold.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Bold.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Bold.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-ExtraBold.woff') format('woff');
-  font-weight: 800;
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-LightItalic.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Bold.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-UltraLight.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-UltraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Regular.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Thin.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Heavy.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Heavy.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Medium.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Medium.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Medium.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-SemiBold.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-SemiBold.woff') format('woff');
-  font-weight: 600;
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('assets/gilroy/Gilroy-Black.woff2') format('woff2'),
-      url('assets/gilroy/Gilroy-Black.woff') format('woff');
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Thin.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Light.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('assets/larsseit/Larsseit-Bold.woff2') format('woff2'),
+      url('assets/larsseit/Larsseit-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// atlas grotesk web
+@font-face {
+  font-family: 'Atlas Grotesk Web';
+  src: url('assets/atlas-grotesk-web/AtlasGroteskWeb-Regular.woff2') format('woff2'),
+      url('assets/atlas-grotesk-web/AtlasGroteskWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Web';
+  src: url('assets/atlas-grotesk-web/AtlasGroteskWeb-Light.woff2') format('woff2'),
+      url('assets/atlas-grotesk-web/AtlasGroteskWeb-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Web';
+  src: url('assets/atlas-grotesk-web/AtlasGroteskWeb-Black.woff2') format('woff2'),
+      url('assets/atlas-grotesk-web/AtlasGroteskWeb-Black.woff') format('woff');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Web';
+  src: url('assets/atlas-grotesk-web/AtlasGroteskWeb-Bold.woff2') format('woff2'),
+      url('assets/atlas-grotesk-web/AtlasGroteskWeb-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
