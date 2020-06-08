@@ -10,8 +10,8 @@ export const environment = {
     appId: "1:783208429423:web:0975ab976bb3d6a4"
   },
   algolia: {
-    apiKey: 'c45b428f5d5fea0d43642a540c85d3f2',
-    appId: '28IX9IUVZI'
+    apiKey: 'cc8dd44968dd2267b57bfa16fab0e899',
+    appId: '29ZI3V3MC2'
   },
   tinyMCE: {
     apiKey: 'ywe3hs0mtphibiihsa9xrtp8kdm0off9i7t3e4ovpfi33ltk'
