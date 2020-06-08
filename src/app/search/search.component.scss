@@ -114,12 +114,7 @@
     opacity: .5;
     font-size: 1.4rem;
 
-    p:first-child {
-      margin-right: 1rem;
-    }
-
-    p:last-child {
-      margin-left: 1rem;
-    }
+    p { margin-right: 1rem; }
+    img { height: 2rem; }
   }
 }
