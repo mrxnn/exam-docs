@@ -9,9 +9,9 @@ import { first, delay, tap } from 'rxjs/operators';
   styleUrls: ['./loading.component.scss']
 })
 export class LoadingComponent implements OnInit {
-  @ViewChild('loading', {static: false}) loading: ElementRef;
-  @ViewChild('loadingbackground', {static: false}) loadingBackground: ElementRef;
-  @ViewChild('loadingsmallbackground', {static: false}) loadingSmallBackground: ElementRef;
+  @ViewChild('loading') loading: ElementRef;
+  @ViewChild('loadingbackground') loadingBackground: ElementRef;
+  @ViewChild('loadingsmallbackground') loadingSmallBackground: ElementRef;
 
   constructor(private afs: AngularFirestore) { }
 
