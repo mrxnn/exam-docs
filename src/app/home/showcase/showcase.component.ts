@@ -21,6 +21,7 @@ export class ShowcaseComponent implements OnInit {
     this.router.navigate(['posts', post.id]);
   }
 
+  //called by the lazyload directive
   load() {
     this.posts$ = this.ps.loadAllPosts();
   }
